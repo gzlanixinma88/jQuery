@@ -15,7 +15,7 @@ $(function() {
     }).siblings().css({
       "background": "#fff",
     })
-    $(".banner-Img a ").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+    $(".banner-Img").eq(index).fadeIn(1000).siblings().fadeOut(1000);
   };
 
 //点击鼠标 图片切换
@@ -31,11 +31,11 @@ $(function() {
     var index = $(this).index(); //获取索引 图片索引与按钮的索引是一一对应的
     // console.log(index);
 
-    $(".carousel-full a ").eq(index).fadeIn(1000).siblings().fadeOut(1000); // siblings  找到 兄弟节点(不包括自己）
+    $(".banner-Img").eq(index).fadeIn(1000).siblings().fadeOut(1000); // siblings  找到 兄弟节点(不包括自己）
   });
 
 //鼠标移进  移出
-  $(".carousel ul li,.banner-Img a img").hover(
+  $(".carousel ul li,.banner-Img").hover(
     //鼠标移进
     function () {
       clearInterval(t)
@@ -51,7 +51,7 @@ $(function() {
         }).siblings().css({
           "background": "#cccccc"
         })
-        $(".banner-Img a ").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+        $(".banner-Img").eq(index).fadeIn(1000).siblings().fadeOut(1000);
       }
     }
   )
