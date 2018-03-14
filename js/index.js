@@ -19,7 +19,7 @@ $(function() {
   };
 
 //点击鼠标 图片切换
-  $(".carousel ul li").click(function () {
+  $(".banner ul li").click(function () {
 
     //添加 移除样式
     //$(this).addClass("lito").siblings().removeClass("lito"); //给当前鼠标移动到的li增加样式 且其余兄弟元素移除样式   可以在样式中 用hover 来对li 实现
@@ -45,7 +45,7 @@ $(function() {
         if (index > 2) {
           index = 0
         }
-        $(".carousel ul li").eq(index).css({
+        $(".banner ul li").eq(index).css({
           "background": "#999",
           "border": "1px solid #ffffff"
         }).siblings().css({

@@ -157,9 +157,9 @@ body{
       li{
         height: 42px;
         color: #fff;
+        background: #757881;
         line-height: 40px;
         text-align: center;
-        position: relative;
         &:hover{
           background: #60646d;
         }
@@ -172,6 +172,7 @@ body{
           margin-right: 20px;
         }
         >ul{
+          display: none;
           position: absolute;
           top: 0;
           left: 180px;
@@ -179,9 +180,98 @@ body{
           background: #fff;
           li{
             color: #000;
+            background: #fff;
+            &:hover{
+              background: #ffffff;
+              color: #ff0000;
+            }
           }
         }
       }
     }
   }
+}
+.content{
+  height: 516px;
+  width: 100%;
+  .content-center{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    .content-nav{
+      .title{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        }
+      .content-family{
+        font-size: 20px;
+        >a{
+          color: #000;
+          &:hover{
+            color: #ff0000;
+          }
+        }
+      }
+      .serviceTags{
+        width: 1200px;
+        height: 375px;
+        margin-top: 20px;
+        display: flex;
+        >a{
+          display: flex;
+          .serviceBorder{
+            width: 230px;
+            height: 345px;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            margin: 0 5px;
+            box-sizing: border-box;
+            flex: 1;
+            >img{
+              width: 210px;
+            }
+            >h2{
+              font-size: 16px;
+              color: #000;
+              font-weight: bold;
+              margin: 5px 0;
+              text-align: left;
+            }
+            >.ellipsis{
+              font-size: 14px;
+              text-align: left;
+              margin-top: 10px;
+              line-height: 18px;
+              width: 208px;
+              height: 58px;
+            }
+            .price{
+              text-align: left;
+              color: #ff0000;
+              span:nth-child(1){
+                color: #ff0000;
+                font-size: 24px;
+              }
+              span:nth-child(2){
+                font-size: 14px;
+                display: inline-block;
+                width: 80px;
+                height: 23px;
+                line-height: 23px;
+                background: #ff0000;
+                color: #ffffff;
+                margin-left: 30px;
+                text-align: center;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
 }
