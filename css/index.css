@@ -143,9 +143,9 @@ body {
   background: #ccc;
 }
 .carousel .banner-list {
-  position: absolute;
+  position: relative;
   left: 100px;
-  top: 0;
+  top: -420px;
   height: 420px;
   width: 180px;
   background: #757881;
@@ -175,7 +175,13 @@ body {
   top: 0;
   left: 180px;
   width: 160px;
+  height: 420px;
   background: #fff;
+}
+.carousel .banner-list ul li > ul .Img {
+  position: absolute;
+  top: 15px;
+  left: -7px;
 }
 .carousel .banner-list ul li > ul li {
   color: #000;
@@ -264,4 +270,108 @@ body {
   margin-left: 30px;
   text-align: center;
   border-radius: 5px;
+}
+.ensure {
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+.ensure h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: '微软雅黑';
+}
+.ensure h2 span {
+  color: #ff0000;
+  font-weight: 800;
+}
+.ensure p {
+  font-size: 22px;
+  color: #3d3838;
+}
+.ensure-list {
+  width: 100%;
+  height: 66px;
+  background: #fff;
+  margin-top: 30px;
+  text-align: center;
+}
+.ensure-list .ensure-li {
+  width: 139px;
+  display: inline-block;
+}
+.ensure-list .ensure-li span {
+  vertical-align: top;
+  margin-left: 5px;
+}
+.footer {
+  height: 150px;
+  width: 100%;
+  margin-top: 50px;
+}
+.footer dl {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer dl dt {
+  margin-top: 5px;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  width: 6%;
+}
+.footer dl dd {
+  float: right;
+  width: 90%;
+  height: 93px;
+  line-height: 30px;
+  margin-left: 30px;
+}
+.footer dl dd a {
+  display: inline-block;
+  width: 9%;
+  text-align: center;
+  color: #898989;
+}
+.beian {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: #fbf8f8;
+}
+.beian span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 80px;
+  text-align: left;
+}
+.beian .footer-icon {
+  width: 90%;
+  margin: 0 auto;
+}
+.beian .footer-icon .text-icon {
+  float: left;
+  width: 10%;
+  height: 60px;
+  margin: 10px 5px;
+}
+.beian .footer-icon .text-icon img {
+  width: 120px;
+  height: 60px;
+  background: #fff;
+}
+.foot {
+  width: 100%;
+  height: 40px;
+  background: #fbf8f8;
+  margin: 0 auto;
+}
+.foot p {
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
 }
