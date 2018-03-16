@@ -252,18 +252,4 @@
 </body>
 <script type="text/javascript" src="./js/jquery.1.10.2.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
-<script type="text/javascript">
-  $(function () {
-    var $top = $('.header').height()
-    $(window).scroll(function () {
-      var $scrollTop = $(window).scrollTop()
-      if($scrollTop>$top){
-        $('.header').addClass('showhead')
-      }else{
-        $('.header').removeClass('showhead')
-      }
-      console.log($scrollTop,$top)
-    })
-  })
-</script>
 </html>
