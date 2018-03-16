@@ -2,7 +2,10 @@ body {
   background: #fff;
 }
 .header {
+  z-index: 200;
+  width: 100%;
   border-bottom: 1px solid #f5f5f5;
+  background: #fff;
 }
 .header .wrap {
   width: 90%;
@@ -84,6 +87,19 @@ body {
 }
 .header .wrap .nav .nav-wrap .list > li > a > img {
   margin-top: 26px;
+}
+.showhead {
+  position: fixed;
+  animation: aa 0.5s;
+  box-shadow: 0 0 8px 0 #7e8c8d;
+}
+@keyframes aa {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .carousel {
   position: relative;

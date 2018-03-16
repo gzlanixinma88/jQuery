@@ -36,7 +36,6 @@
       </div>
     </div>
   </div>
-
 </header>
 <div class="carousel">
   <div class="swiper-container banner">
@@ -489,6 +488,15 @@
       //autoplay: {
       //  disableOnInteraction: false,
       //},
+    });
+    var $top = $('.header').height()
+    $(window).scroll(function () {
+      var $scrollTop = $(window).scrollTop()
+      if($scrollTop>$top){
+        $('.header').addClass('showhead')
+      }else{
+        $('.header').removeClass('showhead')
+      }
     })
   })
 </script>
