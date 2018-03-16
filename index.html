@@ -5,6 +5,7 @@
   <title>到位</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/swiper.css">
 </head>
 <body>
 <header class="header">
@@ -38,25 +39,25 @@
 
 </header>
 <div class="carousel">
-  <div class="banner">
-    <div class="carousel-full">
-      <div class="banner-Img">
+  <div class="swiper-container banner">
+    <div class="swiper-wrapper carousel-full">
+      <div class="swiper-slide banner-Img">
         <a href="javascript:;">
           <img src="image/banner1.jpg" alt="">
         </a>
       </div>
-      <div class="banner-Img">
+      <div class="swiper-slide banner-Img">
         <a href="javascript:;">
           <img src="image/banner2.jpg" alt="">
         </a>
       </div>
-      <div class="banner-Img">
+      <div class="swiper-slide banner-Img">
         <a href="javascript:;">
           <img src="image/banner3.jpg" alt="">
         </a>
       </div>
     </div>
-    <ul>
+    <ul class="swiper-pagination">
       <li class="active"></li>
       <li></li>
       <li></li>
@@ -475,7 +476,21 @@
   <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p>
 </div>
 <script type="text/javascript" src="./js/jquery.1.10.2.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
 <script type="text/javascript" src="./js/menu.js"></script>
+<script type="text/javascript" src="./js/swiper.js"></script>
+<script type="text/javascript">
+  $(function () {
+    var mySwiper = new Swiper('.swiper-container',{
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop : true,
+	  autoplay:true,
+      //autoplay: {
+      //  disableOnInteraction: false,
+      //},
+    })
+  })
+</script>
 </body>
 </html>
