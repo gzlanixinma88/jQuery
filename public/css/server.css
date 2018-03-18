@@ -83,6 +83,19 @@
 .header .wrap .nav .nav-wrap .list > li > a > img {
   margin-top: 26px;
 }
+.showhead {
+  position: fixed;
+  animation: aa 0.5s;
+  box-shadow: 0 0 8px 0 #7e8c8d;
+}
+@keyframes aa {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .htit {
   background: #fff;
   width: 100%;
@@ -201,64 +214,68 @@
   left: 0;
   top: 34px;
 }
-.server .server-center .server-left .server-box {
+.server .server-center .server-left .seller {
+  height: 200px;
+  background: #fff;
+}
+.server .server-center .server-left .seller .server-box {
   display: inline-block;
   width: 960px;
   height: 200px;
 }
-.server .server-center .server-left .server-box:hover {
+.server .server-center .server-left .seller .server-box:hover {
   background: #f5f5f5;
 }
-.server .server-center .server-left .server-box .server-thum {
+.server .server-center .server-left .seller .server-box .server-thum {
   width: 960px;
   height: 200px;
 }
-.server .server-center .server-left .server-box .server-thum img {
+.server .server-center .server-left .seller .server-box .server-thum img {
   width: 150px;
   margin: 25px;
 }
-.server .server-center .server-left .server-box .server-thum .server-list {
+.server .server-center .server-left .seller .server-box .server-thum .server-list {
   display: inline-block;
   width: 615px;
   height: 146px;
   margin: 25px 0;
   vertical-align: top;
 }
-.server .server-center .server-left .server-box .server-thum .server-list span {
+.server .server-center .server-left .seller .server-box .server-thum .server-list span {
   height: 42px;
   line-height: 42px;
   display: block;
 }
-.server .server-center .server-left .server-box .server-thum .server-list span:nth-child(1) {
+.server .server-center .server-left .seller .server-box .server-thum .server-list span:nth-child(1) {
   color: #000;
   font-size: 18px;
 }
-.server .server-center .server-left .server-box .server-thum .server-list span:nth-child(2) {
+.server .server-center .server-left .seller .server-box .server-thum .server-list span:nth-child(2) {
   font-size: 14px;
   margin-bottom: 30px;
 }
-.server .server-center .server-left .server-box .server-thum .server-list span:nth-child(3) {
+.server .server-center .server-left .seller .server-box .server-thum .server-list span:nth-child(3) {
   display: inline;
   color: #ff0000;
   font-size: 30px;
   margin-top: 30px;
 }
-.server .server-center .server-left .server-box .server-thum .server-list span:nth-child(3) i {
+.server .server-center .server-left .seller .server-box .server-thum .server-list span:nth-child(3) i {
   font-style: normal;
 }
-.server .server-center .server-left .server-box .server-thum .server-list span:nth-child(3) i b {
+.server .server-center .server-left .seller .server-box .server-thum .server-list span:nth-child(3) i b {
   font-size: 14px;
   color: #000;
 }
-.server .server-center .server-left .server-box .server-thum .server-list span:nth-child(3) b {
+.server .server-center .server-left .seller .server-box .server-thum .server-list span:nth-child(3) b {
   color: #898989;
   font-size: 15px;
 }
-.server .server-center .server-left .server-box .server-thum .server-list span:nth-child(3) b em {
+.server .server-center .server-left .seller .server-box .server-thum .server-list span:nth-child(3) b em {
   font-style: normal;
   text-decoration: line-through;
 }
-.server .server-center .server-left .server-box .server-thum .right {
+.server .server-center .server-left .seller .server-box .server-thum .right {
   float: right;
   margin: 150px 60px 0 0;
   font-size: 14px;
@@ -293,55 +310,63 @@
   background: #ffff;
 }
 .server .server-center .server-left .ratings .rating {
-  height: 259px;
   margin: 0 3%;
-  padding-top: 20px;
 }
-.server .server-center .server-left .ratings .rating img {
-  vertical-align: middle;
+.server .server-center .server-left .ratings .rating .ratingCount {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-bottom: 1px solid #cccccc;
 }
-.server .server-center .server-left .ratings .rating ul {
+.server .server-center .server-left .ratings .rating .ratingCount .img {
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+}
+.server .server-center .server-left .ratings .rating .ratingCount ul {
   width: 92%;
   height: 238px;
   display: inline-block;
   margin-left: 20px;
 }
-.server .server-center .server-left .ratings .rating ul li {
+.server .server-center .server-left .ratings .rating .ratingCount ul li {
   height: 28px;
   line-height: 28px;
 }
-.server .server-center .server-left .ratings .rating ul li .img {
+.server .server-center .server-left .ratings .rating .ratingCount ul li img {
   width: 10px;
   height: 10px;
 }
-.server .server-center .server-left .ratings .rating ul li span {
+.server .server-center .server-left .ratings .rating .ratingCount ul li img:hover {
+  width: 100px;
+}
+.server .server-center .server-left .ratings .rating .ratingCount ul li span {
   margin-right: 10px;
 }
-.server .server-center .server-left .ratings .rating ul li.commentdetail {
+.server .server-center .server-left .ratings .rating .ratingCount ul li.commentdetail {
   height: 52px;
   line-height: 26px;
   font-size: 16px;
 }
-.server .server-center .server-left .ratings .rating ul li.detailImg {
+.server .server-center .server-left .ratings .rating .ratingCount ul li.detailImg {
   margin: 15px auto;
   height: 60px;
 }
-.server .server-center .server-left .ratings .rating ul li.detailImg img {
+.server .server-center .server-left .ratings .rating .ratingCount ul li.detailImg img {
   float: left;
   width: 60px;
   height: 60px;
   margin-right: 20px;
 }
-.server .server-center .server-left .ratings .rating ul li.commentposition {
+.server .server-center .server-left .ratings .rating .ratingCount ul li.commentposition {
   line-height: 20px;
 }
-.server .server-center .server-left .ratings .rating ul li.commentposition img {
+.server .server-center .server-left .ratings .rating .ratingCount ul li.commentposition img {
   width: 9px;
   height: 11px;
   vertical-align: middle;
   margin-right: 5px;
 }
-.server .server-center .server-left .ratings .rating ul li.commentposition span {
+.server .server-center .server-left .ratings .rating .ratingCount ul li.commentposition span {
   font-size: 14px;
 }
 .server .server-center .server-left .ratings .fenye {
@@ -371,14 +396,15 @@
   background: #ff0000;
   color: #fff;
 }
-.server .server-center .server-left .ratings .fenye .fenye-cout a:first-child {
-  background: #ff0000;
+.server .server-center .server-left .ratings .fenye .fenye-cout a.arc {
+  background: #fe454a;
+  color: #fff;
 }
 .server .server-center .server-right {
   width: 230px;
   height: 590px;
   position: relative;
-  left: -20px;
+  left: 5px;
   float: right;
 }
 .server .server-center .server-right .erweima2 {

@@ -25,9 +25,9 @@
               <span>切换城市</span>
             </a>
           </li>
-          <li><a href="javascript:;">首页</a></li>
+          <li class="active"><a href="index.html:;">首页</a></li>
           <li><a href="javascript:;">到位APP</a></li>
-          <li><a href="javascript:;">服务商</a></li>
+          <li><a href="services.html">服务商</a></li>
           <li><a href="javascript:;">商家入驻</a></li>
           <li><a href="javascript:;">风物APP</a></li>
           <li><a href="javascript:;">关于我们</a></li>
@@ -267,13 +267,13 @@
       <img src="./image/shanxiu.jpg" alt="">
     </div>
     <div class="text-icon">
-      <img src="./image/shanxiu.jpg" alt="">
+      <img src="./image/qiaomao.png" alt="">
     </div>
     <div class="text-icon">
-      <img src="./image/shanxiu.jpg" alt="">
+      <img src="./image/mifeng.jpg" alt="">
     </div>
     <div class="text-icon">
-      <img src="./image/shanxiu.jpg" alt="">
+      <img src="./image/meidao.jpg" alt="">
     </div>
     <div class="text-icon">
       <img src="./image/shanxiu.jpg" alt="">
@@ -327,17 +327,24 @@
 <script type="text/javascript" src="./js/menu.js"></script>
 <script type="text/javascript" src="./js/swiper.js"></script>
 <script type="text/javascript" src="./js/template-web.js"></script>
-<script type="text/javascript">
-  $(function () {
+
+    <script type="text/javascript">
+      $(function () {
+        var $list = $('.nav-wrap .list')
+        $list.click(function () {
+          $(this).addClass('active')
+        })
     var mySwiper = new Swiper('.swiper-container',{
       pagination: {
         el: '.swiper-pagination',
       },
       loop : true,
-	  autoplay:true,
-      //autoplay: {
-      //  disableOnInteraction: false,
-      //},
+	    /*autoplay:true,*/
+
+      paginationClickable:true,
+      autoplay: {
+       disableOnInteraction: false,
+      },
     });
     var $top = $('.header').height()
     $(window).scroll(function () {
@@ -388,6 +395,13 @@
       $('#daowei').append(html)
     })
   })
+
+  window.onload = function (ev) {
+    $('.list>li>a').click(function () {
+      alert('oooo')
+      window.location.href = 'index.html'
+    })
+  }
 </script>
 </body>
 </html>

@@ -40,6 +40,9 @@ body{
           >li{
             height: 71px;
             float: left;
+            &.active{
+              color: #ff0000;
+            }
             &:nth-child(1){
               margin-right: 50px;
               >a:hover{
@@ -72,9 +75,6 @@ body{
               font-weight: bold;
               color: #000;
               padding: 10px 15px;
-              &:hover{
-                color: #e94840;
-              }
               &:nth-child(1) >span{
                 vertical-align: top;
                 font-weight: bold;
@@ -293,8 +293,11 @@ body{
       }
 
     }
-
+    &:nth-child(2n){
+      background: #fbf8f8;
+    }
   }
+
 }
 .ensure{
   width: 100%;

@@ -104,3 +104,8 @@
         });
       模板中使用的方式： {{time | dateFormat:'yyyy-MM-dd hh:mm:ss'}}  
       支持传入参数与嵌套使用： {{time | say:'cd' | ubb | link}} 
+      
+###分页查询
+  分页查询公式：
+    分页公式： find({}).limit(10).skip((1-1)*10).exec(function(){})
+                      每页查询的个数  每页起始的位置
